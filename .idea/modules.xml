@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Energy_Communities.iml" filepath="$PROJECT_DIR$/.idea/Energy_Communities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/API_Energy_Communities.iml" filepath="$PROJECT_DIR$/.idea/API_Energy_Communities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Energy_Communities/Energy_Communities.iml" filepath="$PROJECT_DIR$/Energy_Communities/Energy_Communities.iml" />
     </modules>
   </component>
 </project>
