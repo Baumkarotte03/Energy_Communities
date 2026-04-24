@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Energy_Communities/pom.xml" />
+        <option value="$PROJECT_DIR$/energy-javafx-gui/pom.xml" />
       </list>
     </option>
   </component>
