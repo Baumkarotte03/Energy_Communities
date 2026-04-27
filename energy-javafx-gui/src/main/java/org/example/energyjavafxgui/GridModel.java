@@ -15,7 +15,7 @@ import java.util.List;
 
 
 public class GridModel {
-    private static final DateTimeFormatter ISO_FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd 'T'HH:mm:ss");
+    private static final DateTimeFormatter ISO_FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
 
 
     private final ObjectMapper mapper = new ObjectMapper();
@@ -47,11 +47,11 @@ public class GridModel {
     }
 
     public String getCommunityPool() {
-        return String.format("%.2f%% used", communityPool);
+        return String.format("Community Pool %.2f%% used", communityPool);
     }
 
     public String getGridPortion() {
-        return String.format("%.2f%%", gridPortion);
+        return String.format("Grid Portion %.2f%%", gridPortion);
     }
 
 
@@ -97,14 +97,14 @@ public class GridModel {
     }
 
     public String getCommunityProduced() {
-        return String.format("%.2f kWh", communityProduced);
+        return String.format("Community produced %.2f kWh", communityProduced);
     }
 
     public String getCommunityUsed() {
-        return String.format("%.2f kWh", communityUsed);
+        return String.format("Community used %.2f kWh", communityUsed);
     }
 
     public String getGridUsed() {
-        return String.format("%.2f kWh", gridUsed);
+        return String.format("Grid used %.2f kWh", gridUsed);
     }
 }

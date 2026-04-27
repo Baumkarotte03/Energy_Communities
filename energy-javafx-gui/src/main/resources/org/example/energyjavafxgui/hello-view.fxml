@@ -9,12 +9,12 @@
     <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
   </padding>
 
-  <Label id="labelCommunityPool" alignment="CENTER" text="Community Pool">
+  <Label fx:id="labelCommunityPool" alignment="CENTER" text="Community Pool">
       <opaqueInsets>
          <Insets />
       </opaqueInsets></Label>
-   <Label id="labelGridPortion" prefWidth="103.0" text="Grid Portion" />
-  <Button onAction="#onHelloButtonClick" text="refresh" />
+   <Label fx:id="labelGridPortion" prefWidth="103.0" text="Grid Portion" />
+  <Button onAction="#onRefreshClick" text="refresh" />
    <GridPane>
      <columnConstraints>
        <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" />
@@ -26,22 +26,22 @@
      </rowConstraints>
       <children>
          <Label text="Start" />
-         <DatePicker id="start" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" />
+         <DatePicker fx:id="start" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" />
          <Label text="End" GridPane.rowIndex="1" />
-         <DatePicker id="end" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <DatePicker fx:id="end" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       </children>
       <VBox.margin>
          <Insets right="10.0" />
       </VBox.margin>
    </GridPane>
-   <Button mnemonicParsing="false" text="show data">
+   <Button onAction="#onShowDataClick" mnemonicParsing="false" text="show data">
       <VBox.margin>
          <Insets bottom="10.0" />
       </VBox.margin></Button>
-   <Label id="labelCommunityProduced" text="Community produced" />
-   <Label id="labelCommunityUsed" text="Community used" />
-   <Label id="labelGridUsed" text="Grid used" />
-   <Label id="labelError" />
+   <Label fx:id="labelCommunityProduced" text="Community produced" />
+   <Label fx:id="labelCommunityUsed" text="Community used" />
+   <Label fx:id="labelGridUsed" text="Grid used" />
+   <Label fx:id="labelError" />
    <opaqueInsets>
       <Insets />
    </opaqueInsets>

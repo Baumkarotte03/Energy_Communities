@@ -11,7 +11,7 @@ public class HelloController {
 
     private GridModel model = new GridModel();
 
-    private static final DateTimeFormatter ISO_FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd 'T'HH:mm:ss");
+    private static final DateTimeFormatter ISO_FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
 
     @FXML
     private Label labelCommunityPool;
