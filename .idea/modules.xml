@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/API_Energy_Communities.iml" filepath="$PROJECT_DIR$/.idea/API_Energy_Communities.iml" />
-      <module fileurl="file://$PROJECT_DIR$/energy-javafx-gui/energy-javafx-gui.iml" filepath="$PROJECT_DIR$/energy-javafx-gui/energy-javafx-gui.iml" />
     </modules>
   </component>
 </project>
