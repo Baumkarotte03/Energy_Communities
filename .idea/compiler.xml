@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="energy-javafx-gui" />
+        <module name="usage-service" />
         <module name="energy-rest-api" />
+        <module name="current-percentage-service" />
+        <module name="energy-user" />
+        <module name="energy-producer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
