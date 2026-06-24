@@ -9,8 +9,8 @@
         <module name="energy-javafx-gui" />
         <module name="usage-service" />
         <module name="energy-rest-api" />
-        <module name="current-percentage-service" />
         <module name="energy-user" />
+        <module name="current-percentage-service" />
         <module name="energy-producer" />
       </profile>
     </annotationProcessing>
@@ -20,6 +20,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="current-percentage-service" options="-parameters" />
       <module name="energy-rest-api" options="-parameters" />
     </option>
   </component>
