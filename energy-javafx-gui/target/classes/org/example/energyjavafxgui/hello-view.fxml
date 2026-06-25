@@ -13,7 +13,7 @@
       prefHeight="460"
       xmlns="http://javafx.com/javafx/17"
       xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="org.example.energyjavafxgui.HelloController">
+      fx:controller="org.example.energyjavafxgui.Controller">
 
     <padding>
         <Insets top="14" right="14" bottom="14" left="14"/>
