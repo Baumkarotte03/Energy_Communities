@@ -11,12 +11,12 @@
         <option value="$PROJECT_DIR$/energy-producer/pom.xml" />
         <option value="$PROJECT_DIR$/energy-user/pom.xml" />
         <option value="$PROJECT_DIR$/usage-service/pom.xml" />
-        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/usage-service/usage-service1/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/usage-service1/pom.xml" />
       </set>
     </option>
   </component>
