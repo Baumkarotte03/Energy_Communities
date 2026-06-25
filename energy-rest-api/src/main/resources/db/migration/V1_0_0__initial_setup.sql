@@ -1,5 +1,5 @@
 -- Tabelle für stündliche Verbrauchs- und Produktionsdaten
-CREATE TABLE usage_data (
+CREATE TABLE IF NOT EXISTS usage_data (
                                           id                BIGSERIAL PRIMARY KEY,
                                           hour              TIMESTAMP NOT NULL UNIQUE,
                                           community_produced DOUBLE PRECISION NOT NULL DEFAULT 0,
@@ -8,7 +8,7 @@ CREATE TABLE usage_data (
 );
 
 -- Tabelle für den aktuellen Prozentwert der laufenden Stunde
-CREATE TABLE current_percentage (
+CREATE TABLE IF NOT EXISTS current_percentage (
                                                   id                  BIGSERIAL PRIMARY KEY,
                                                   hour                TIMESTAMP NOT NULL UNIQUE,
                                                   community_depleted  DOUBLE PRECISION NOT NULL DEFAULT 0,
