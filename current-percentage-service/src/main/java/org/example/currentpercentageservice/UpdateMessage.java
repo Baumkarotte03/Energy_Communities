@@ -1,0 +1,18 @@
+package org.example.currentpercentageservice;
+
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import java.time.LocalDateTime;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class UpdateMessage {
+
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
+    private LocalDateTime hour;
+
+    public UpdateMessage() {}
+
+    public LocalDateTime getHour()          { return hour; }
+    public void setHour(LocalDateTime hour) { this.hour = hour; }
+}
