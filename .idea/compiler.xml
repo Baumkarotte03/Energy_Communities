@@ -15,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="17" />
       <module name="Energy_Communities" target="21" />
       <module name="usage-service1" target="1.5" />
     </bytecodeTargetLevel>
