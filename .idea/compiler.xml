@@ -23,7 +23,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="current-percentage-service" options="-parameters" />
+      <module name="energy-producer" options="-parameters" />
       <module name="energy-rest-api" options="-parameters" />
+      <module name="energy-user" options="-parameters" />
       <module name="usage-service" options="-parameters" />
     </option>
   </component>
