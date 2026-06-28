@@ -23,7 +23,7 @@ public class WeatherService {
      * Gibt Solar-Faktor 0.0–1.0 zurück.
      * Basiert auf Open-Meteo weathercode:
      *   0 = klarer Himmel → 1.0
-     *   1 = hauptsächlich klar → 0.8
+     *   1 = hauptsächlich klar → 0.7
      *   2 = teilweise bewölkt → 0.5
      *   3 = bedeckt → 0.3
      *   >3 = Regen/Gewitter → 0.1
@@ -43,7 +43,7 @@ public class WeatherService {
                     .path("weathercode").asInt(3);
 
             if (weatherCode == 0) return 1.0;
-            if (weatherCode <= 1) return 0.8;
+            if (weatherCode <= 1) return 0.7;
             if (weatherCode <= 2) return 0.5;
             if (weatherCode <= 3) return 0.3;
             return 0.1;

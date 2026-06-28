@@ -48,14 +48,14 @@ public class PercentageListener {
         gridPortion       = Math.round(gridPortion * 100.0) / 100.0;
 
         // Upsert: vorhandenen Eintrag aktualisieren oder neuen erstellen
-        CurrentPercentage cp = percentageRepository
+        CurrentPercentage currentpercentage = percentageRepository
                 .findByHour(message.getHour())
                 .orElse(new CurrentPercentage());
 
-        cp.setHour(message.getHour());
-        cp.setCommunityDepleted(communityDepleted);
-        cp.setGridPortion(gridPortion);
-        percentageRepository.save(cp);
+        currentpercentage.setHour(message.getHour());
+        currentpercentage.setCommunityDepleted(communityDepleted);
+        currentpercentage.setGridPortion(gridPortion);
+        percentageRepository.save(currentpercentage);
 
         System.out.printf("[PercentageService] hour=%s | depleted=%.2f%% | grid=%.2f%%%n",
                 message.getHour(), communityDepleted, gridPortion);

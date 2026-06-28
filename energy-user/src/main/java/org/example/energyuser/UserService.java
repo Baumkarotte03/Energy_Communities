@@ -45,9 +45,9 @@ public class UserService {
      * Peak morgens (7–9 Uhr) und abends (17–20 Uhr).
      */
     private double getTimeOfDayFactor(int hour) {
-        if (hour >= 7  && hour <= 9)  return 1.0;   // Morgen-Peak
-        if (hour >= 17 && hour <= 20) return 0.9;   // Abend-Peak
-        if (hour >= 10 && hour <= 16) return 0.5;   // Tagesbetrieb
+        if (hour >= 7  && hour <= 9)  return 0.9;   // Morgen-Peak
+        if (hour >= 17 && hour <= 20) return 1.0;   // Abend-Peak
+        if (hour >= 10 && hour <= 16) return 0.4;   // Tagesbetrieb
         if (hour >= 21 && hour <= 23) return 0.4;   // Ruhiger Abend
         return 0.2;                                   // Nacht (0–6 Uhr)
     }

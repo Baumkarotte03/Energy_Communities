@@ -59,8 +59,7 @@ public class UsageListener {
         }
 
         repository.save(row);
-
-        // Natascha's Service benachrichtigen
+        
         rabbitTemplate.convertAndSend(RabbitMQConfig.UPDATE_QUEUE, new UpdateMessage(hour));
         System.out.println("[UsageService] UPDATE gesendet für hour: " + hour);
     }
