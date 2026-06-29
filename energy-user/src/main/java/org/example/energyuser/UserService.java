@@ -29,7 +29,7 @@ public class UserService {
         kwh = Math.round(kwh * 10000.0) / 10000.0;
 
         EnergyMessage message = new EnergyMessage(
-                "USER",            // type – Lea's Service erwartet genau diesen String
+                "USER",
                 "COMMUNITY",
                 kwh,
                 LocalDateTime.now()
